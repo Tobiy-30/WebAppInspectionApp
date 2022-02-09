@@ -1,0 +1,351 @@
+<doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" 
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <style>
+    .no-gutters {
+      margin-right: 0;
+      margin-left: 0;
+      }
+      .col {
+        padding-right: 0;
+        padding-left: 0;
+      }
+
+  </style>
+    <style>
+        #portrait{
+          color: black !important;
+        }
+        .card-box {
+            position: relative;
+            color: #fff;
+            padding: 20px 10px 40px;
+            margin: 20px 0px;
+        }
+        .card-box:hover {
+            text-decoration: none;
+            color: #f1f1f1;
+        }
+        .card-box:hover .icon i {
+            font-size: 100px;
+            transition: 1s;
+            -webkit-transition: 1s;
+        }
+        .card-box .inner {
+            padding: 5px 10px 0 10px;
+        }
+        .card-box h3 {
+            font-size: 27px;
+            font-weight: bold;
+            margin: 0 0 8px 0;
+            white-space: nowrap;
+            padding: 0;
+            text-align: left;
+        }
+        .card-box p {
+            font-size: 15px;
+        }
+        .card-box .icon {
+            position: absolute;
+            top: auto;
+            bottom: 5px;
+            right: 5px;
+            z-index: 0;
+            font-size: 72px;
+            color: rgba(0, 0, 0, 0.15);
+        }
+        .card-box .card-box-footer {
+            position: absolute;
+            left: 0px;
+            bottom: 0px;
+            text-align: center;
+            padding: 3px 0;
+            color: rgba(255, 255, 255, 0.8);
+            background: rgba(0, 0, 0, 0.1);
+            width: 100%;
+            text-decoration: none;
+        }
+        .card-box:hover .card-box-footer {
+            background: rgba(0, 0, 0, 0.3);
+        }
+        .bg-blue {
+            background-color: #00c0ef !important;
+        }
+        .bg-green {
+            background-color: #00a65a !important;
+        }
+        .bg-orange {
+            background-color: #f39c12 !important;
+        }
+        .bg-red {
+            background-color: #d9534f !important;
+        }
+        </style>
+
+    <title>Musk Process Services Inspection App</title>
+  </head>
+  <body>
+                <!-- Navbar Component -->
+    <nav class="navbar sticky-top navbar-expand-md navbar-light" 
+         style=" font-weight: bold; background-color: #e3f2fd;">
+         <a class="navbar-brand" href="#" style="display: inline-block;">
+            <img id="Logosize"src="/Users/tobi3000/Documents/WebAppInspectionApp/resources/images/MUSK-logo.png " 
+            alt="Musk Process Services Logo"  width="130" height="50">
+         </a>
+                            
+                <!-- Toggle button -->
+                                
+         <button class="navbar-toggler" type="button" data-toggle="collapse" 
+         data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+         </button>
+
+                <!-- Collapsible wrapper -->
+
+         <div class="collapse navbar-collapse justify-content-right" id="navbarNav" >
+
+                <!-- Left links -->
+
+            <ul class="navbar-nav ">
+                <li class="nav-item active">
+                    <a class="nav-link px-5" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link px-5" href="#">Inspections</a>
+                </li>                  
+                <li class="nav-item">
+                    <a class="nav-link px-5" href="#">Reports</a>
+                </li>
+                                
+               <!-- Navbar dropdown -->
+
+                <li class="nav-item dropdown bg px-5" style=" font-weight: bold; background-color: #e3f2fd;">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" 
+                        role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Admin
+                    </a>
+
+                <!-- Dropdown menu -->
+
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">User Management</a>
+                        <a class="dropdown-item" href="#">Access Management</a>
+                    <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Separated link</a>
+                    </div>
+                </li>
+                                    
+                               
+                                    
+            </div>
+
+                <!-- Right links -->
+            
+                <!-- Avatar -->
+            <div class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle " href="#" id="navbarDropdownMenuLink" 
+                       role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                        style=" font-weight: normal ; font-size:small ; ">
+                        <img id="Portrait " style="filter: drop-shadow(1px 1px 1px black); "src="./resources/images/IMG_3450.JPG" class=" rounded-circle pr-1" height="25"
+                        alt="Black and White Portrait of a Man" loading="lazy" />Berry Kingston
+                    </a>
+
+                <!-- Collapsible wrapper -->
+
+                    <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuAvatar">
+                        <li>
+                            <a class="dropdown-item" href="#">My profile</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">Settings</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">Logout</a>
+                         </li>
+                    </div>
+            </div>
+                         
+    </nav>
+                <!-- Start of container -->
+    <div class="container" style="margin-top: 40px">
+
+    <!-- Row with collapsible content -->
+
+    <div class="row">
+      <div class="col-lg-3 col-sm-6 align-items-lg-center">
+        <a aria-expanded="false" aria-controls="seedSpecial" data-toggle="collapse" 
+        href="#seedSpecial" style="font-weight: bold; text-decoration: none; color: gray">
+          Dashboard
+        </a>
+        <p class="collapse" id="seedSpecial">Use promo code "Garden" for additional 15% off your entire purchase!
+        </p>
+      </div>
+    </div>
+    <!-- End of row with collapsible content -->
+
+    
+
+    <!-- Row with cards -->
+        <!-- Row with cards -->
+        <div class="row">
+            <div class="col-lg-3 col-sm-6">
+                <div class="card-box bg-blue">
+                    <div class="inner">
+                        <h5>Welcome back,</h5>
+                        <p>  Jerry!</p>
+                    </div>
+                    <div class="icon">
+                        <i class="fa fa-graduation-smileS" aria-hidden="true"></i>
+                    </div>
+                    <a href="#" class="card-box-footer">View Today's Task <i class="fa fa-arrow-circle-right"></i></a>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-sm-6">
+                <div class="card-box bg-green">
+                    <div class="inner">
+                        <h5> 30  </h5>
+                        <p> Today’s Inspections </p>
+                    </div>
+                    <div class="icon">
+                        <i class="fa fa-user-check" aria-hidden="true"></i>
+                    </div>
+                    <a href="#" class="card-box-footer">View More <i class="fa fa-arrow-circle-right"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="card-box bg-orange">
+                    <div class="inner">
+                        <h5> 80 </h5>
+                        <p> New Interventions </p>
+                    </div>
+                    <div class="icon">
+                        <i class="fa fa-user-plus" aria-hidden="true"></i>
+                    </div>
+                    <a href="#" class="card-box-footer">View More <i class="fa fa-arrow-circle-right"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="card-box bg-red">
+                    <div class="inner">
+                        <h5> Not Wearing PPE </h5>
+                        <p> Current Biggest Issue MTD</p>
+                    </div>
+                    <div class="icon">
+                        <i class="fa fa-users"></i>
+                    </div>
+                    <a href="#" class="card-box-footer">View More <i class="fa fa-arrow-circle-right"></i></a>
+                </div>
+          </div>
+            
+    <!-- End of row with cards -->
+    <br>
+
+    <!-- Row with carousel component -->
+    <div class="row">
+        <div class="col-3"></div>
+        <div class="col-6">
+          <div id="carouselExampleDark" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="3000">
+                <img src="./resources/images/covid3.jpg" class="d-block w-100" alt="...">
+                </div><div class="carousel-caption d-none d-md-block">
+                  <h5 style="color:darkblue">Inspector Of The Month</h5>
+                  <p>Congratulations to Frank Lampard on his outstanding performance!</p>
+                
+              </div>
+              <div class="carousel-item" data-bs-interval="3000" > 
+                <img src="./resources/images/employee 3.jpeg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 style="color:darkblue">Team Of The Month</h5>
+                  <p>Well done Harry and Maguire!.</p>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="3000">
+                <img src="./resources/images/team4 5.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 style="color:darkblue">Covid19 Information</h5>
+                  <p>All sites are to comply and place priority on covid19 guildelines.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <div class="col-3"></div>
+
+    </div>
+    <!-- End of row with carousel component -->
+
+    <!-- Row with jumbotron component -->
+        <div class="row " style="margin-top: 40px">
+            <div class="col">
+              <div class="jumbotron p-3 " style="background-color: #e3f2fd;">
+                <h1 class="text-center">EXCELLENCE IN ENGINEERING</h1>
+                <hr>
+                <p>
+                  Across the business we help our clients to be more productive, efficient, sustainable and fully compliant.
+                <p>
+                  Our teams provide a complete lifecycle of asset engineering services to keep critical machinery running and ensure facilities operate efficiently.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- End of row with jumbotron component -->
+
+        <!-- Row with nav component -->
+        <div class="row">
+          <div class="col">
+            <nav class="nav justify-content-center">
+              <a class="nav-link" href="#">Help</a>
+              <a class="nav-link" href="#">Contact Us</a>
+            </nav>
+          </div>
+        </div>
+        <!-- End of row with nav component -->
+      </div>
+      <!-- End of container -->
+
+                   
+                    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+                    <!-- Bootstrap Bundle with Popper -->
+                    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" 
+                    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" 
+                    crossorigin="anonymous"></script>
+                    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" 
+                    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" 
+                    crossorigin="anonymous"></script>
+                    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+                    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+                    crossorigin="anonymous"></script>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" 
+                    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" 
+                    crossorigin="anonymous"></script>
+                    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" 
+                    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" 
+                    crossorigin="anonymous"></script>
+  </body>
+</html>
