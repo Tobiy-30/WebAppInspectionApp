@@ -1,9 +1,7 @@
-# Developing Web Solutions Module (MOD002701) - Team 1
+# Developing Web Solutions
 # Inspections-Management Project
 
-This repository contains the code for the Inspections-Management (Musk) assignment
-for Team 1, submitted April 2022, the coursework project completed as part of the
-"Developing Web Solutions" Module (MOD002701) at Anglia Ruskin University, UK.
+This repository contains the code for the Inspections-Management 
 
 # Development Environment Setup Instructions
 
